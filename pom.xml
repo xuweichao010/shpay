@@ -7,12 +7,10 @@
     <groupId>com.xwc.pri</groupId>
     <artifactId>shpay</artifactId>
     <version>1.0</version>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.3.RELEASE</version>
-        <relativePath/>
     </parent>
     <dependencies>
         <dependency> <!-- spring快速启动组件 -->
@@ -24,6 +22,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency> <!-- 数据库驱动  -->
             <groupId>mysql</groupId>
@@ -77,9 +79,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.xwc.open.example.Application</mainClass>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>

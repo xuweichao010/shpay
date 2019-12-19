@@ -1,0 +1,1 @@
+package com.xwc.shpay.controller.sys.auth;import io.swagger.annotations.ApiModelProperty;import lombok.Data;/** * 创建人：徐卫超 * 时间：2019/12/18 14:44 * 功能： * 备注： */@Datapublic class LoginDto {    @ApiModelProperty("用户名")    private String username;    @ApiModelProperty("密码")    private String password;}

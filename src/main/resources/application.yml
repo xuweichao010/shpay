@@ -1,9 +1,7 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   profiles.active: dev
-  logging.level:
-    root: INFO
   #数据库配置
   datasource:
       type:
@@ -24,20 +22,6 @@ spring:
       poolPreparedStatements: false       #打开PSCache，并且指定每个连接上PSCache的大小
       maxPoolPreparedStatementPerConnectionSize: 20
       mapUnderscoreToCamelCase: true
-  scheduled:
-      enableAsync: true
-      enableSoa: true
-      duration: true
-      #soaId: zhiyinhao
-      async:
-        corePoolSize: 20
-        maxPoolSize: 40
-  cache.type: SIMPLE
-  redis:                # REDIS (RedisProperties)
-    database: 9         # Redis数据库索引（默认为0）
-    host: 127.0.0.1     # Redis服务器地址
-    port: 6379          # Redis服务器连接端口
-      timeout: 0        # 连接超时时间（毫秒）
 mybatis: # myBatis 配置
   configuration:
     map-underscore-to-camel-case: true
